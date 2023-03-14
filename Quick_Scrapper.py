@@ -3,20 +3,20 @@ from bs4 import BeautifulSoup as soup
 import requests as req
 import pandas as pd
 
-# # Create the argument parser
-# parser = argparse.ArgumentParser(description='Scrape a Goodreads Listopia list.')
-# parser.add_argument('url', metavar='url', type=str, help='URL of the Goodreads Listopia list to scrape')
-# parser.add_argument('-p', '--pages', metavar='pages', type=int, default=1, help='Number of pages to scrape (default is 1)')
+# Create the argument parser
+parser = argparse.ArgumentParser(description='Scrape a Goodreads Listopia list.')
+parser.add_argument('url', metavar='url', type=str, help='URL of the Goodreads Listopia list to scrape')
+parser.add_argument('-p', '--pages', metavar='pages', type=int, default=1, help='Number of pages to scrape (default is 1)')
 
-# # Parse the arguments
-# args = parser.parse_args()
+# Parse the arguments
+args = parser.parse_args()
 
-# # Set the URL to scrape from the command line argument
-# final_url = args.url
-# pages = args.pages
+# Set the URL to scrape from the command line argument
+final_url = args.url
+pages = args.pages
 
-final_url = 'https://www.goodreads.com/list/show/83741.Kindle_Unlimited_Romance_Favorites'
-pages = 3
+# final_url = 'https://www.goodreads.com/list/show/83741.Kindle_Unlimited_Romance_Favorites'
+# pages = 3
 
 # Send a request to the URL
 def get_the_tr_containers(url):
