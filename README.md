@@ -30,6 +30,28 @@ If you're a book lover looking for a dynamic online community to connect with, t
 ## Usage:
 
 1. Go to [Goodreads Listopia](https://www.goodreads.com/list).
-2. Select the list you want to scrape.
+2. Select the list of your choice and copy its URL.
 3. Open terminal/command prompt and navigate to the project directory.
-4. Run the scraper with the
+4. Run the scraper with the following command:
+
+   ```
+   python Quick_Scraper.py <list-url>
+   ```
+
+   Replace `<list-url>` with the URL of the list you copied earlier.
+
+5. The program will scape the first page of the list by default and print the results to the console.
+
+## Optional argument(s):
+
+- `-p/--pages`: The number of pages to scrape (default: 1).
+  Example command to scrape first five pages of a list:
+  ```
+  python Quick_Scraper.py <list-url> -p 3
+  ```
+- `-o/--output`: Where to get the output (default: console).
+  Example command to save it to a csv file:
+  ```
+  python Quick_Scraper.py <list-url> -o csv
+  ```
+  Note: This will save the whole unordered dataFrame to a csv file (for analysis purpose).
