@@ -1,4 +1,4 @@
-# GoodReads_Scrapper
+# GoodReads_Scraper
 
 Looking for a good book to read this summer but don't know where to start? We've got you covered! Say goodbye to the tedious task of searching for the perfect book and let us do the work for you. Our project involves web-scraping the popular [Goodreads Listopia](https://www.goodreads.com/list) page to bring you the top book recommendations for the season. So sit back, relax, and let's take a journey through the world of literature together!
 
@@ -13,9 +13,23 @@ If you're a book lover looking for a dynamic online community to connect with, t
 
 ## Installation:
 
-1. Clone the [repository](https://github.com/itadityaa/GoodReads_Scrapper) or download the [source code]
+1. Clone the [repository](https://github.com/itadityaa/GoodReads_Scraper) or download the [source code](https://github.com/itadityaa/GoodReads_Scraper/blob/main/Quick_Scraper.py).
+2. Navigate to the project directory in your terminal/command peompt.
+3. Create and activate a virtual environment (optional):
+   ```
+   virtualenv venv
+   source venv/bin/activate # for Linux/Mac
+   venv\Scripts\activate.bat # for Windows
+   ```
+4. Install the required packages using pip:
+   ```
+   pip install -r requirements.txt
+   ```
+   That is all you need to run the code.
 
 ## Usage:
 
-1. Go to [Listopia](https://www.goodreads.com/list)
+1. Go to [Goodreads Listopia](https://www.goodreads.com/list).
 2. Select the list you want to scrape.
+3. Open terminal/command prompt and navigate to the project directory.
+4. Run the scraper with the
